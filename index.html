@@ -3,13 +3,48 @@
 <head>
     <meta charset="utf-8">
     <title>Conhecendo o GITHUB</title>
+    <!-- adicionando CSS interno, comentario pelo html -->
+    <style>
+        /* comentario pelo CSS, é aqui que adiciona o estilo da pagina. */
+
+        /* Definições gerais da página, dentro do * vai ser padrão de toda a pagina, box e border serve para alinhar os elementos */
+        *{
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+        /* fazer o reset, zerar a margin e padding do corpo da pag */
+
+        body{
+            background-color: rgb(182, 179, 143);
+            width: 90%; 
+            margin: 0 auto;
+        }
+
+        h2{
+            color: rgb(216, 0, 216);
+        }
+
+        h3{
+            color:blue;
+        }
+
+        #dicas{
+            color: brown;
+        }
+
+       
+
+    </style>
+
 </head>
 <body>
     <a href="https://github.com/" target="_blank">
         <img src="img/Octocat.png" alt="Logo do Github" width="100px">   
     </a>
     
-    <h1>Conhecendo o GITHUB</h1>
+    <h1 style="color:#ffffff;background-color: rgb(14, 6, 6);padding: 10px;text-align: center;">Conhecendo o GITHUB</h1>
+
     <h2>Realizando COMMITS</h2>
     <ul>
         <li>Utilizar nomes de Commits objetivos e curtos até 50 caracteres</li>
@@ -21,7 +56,7 @@
         <li>Cuidado com o idioma, utilizar pt-br ou en-us</li>
     </ul>
 
-    <h3>Dicas de boas práticas para nomes de commits</h3>
+    <h3 id="dicas">Dicas de boas práticas para nomes de commits</h3>
     <ul>
         <li><b>Adicionar:</b> Funcionalidade zoom da galeria de imagens adicionada</li>
         <li><b>Alterar:</b> Funcionalidade zoom da galeria de imagens alterada</li>
@@ -51,9 +86,9 @@
         </a>
     </ul>
     
-    <hr>
+    <hr style="height:3px;border-width:0;color:rgb(161, 29, 29);background-color:rgb(163, 7, 7)">
 
-    &trade; &copy; &reg; Desenvolvido por: <b><i>Renata</i></b>
+    &copy; &reg; Desenvolvido por: <b><i>Renata</i></b>
     <br>
     <a href="mailto:renata.aversa@hotmail.com">
         <small>renata.aversa@hotmail.com</small>
