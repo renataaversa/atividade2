@@ -11,30 +11,68 @@
         /* Definições gerais da página, dentro do * vai ser padrão de toda a pagina, box e border serve para alinhar os elementos */
         *{
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
         }
         /* fazer o reset, zerar a margin e padding do corpo da pag */
 
         body{
-            background-color: rgb(182, 179, 143);
+            background-color: rgb(224, 224, 224);
             width: 90%; 
+            margin: 10px auto;
+            border: 3px dashed #000;
+            /* border é a borda do site, alem do dashed tem outras opções, como solid, dashed, dotted, double */
+            /* border radius deixa a borda arredondada */
+            border-radius: 10px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+
+        img{
+            display: block;
             margin: 0 auto;
+            width: 100px;
         }
 
         h2{
             color: rgb(216, 0, 216);
+            padding: 10px;
         }
 
         h3{
             color:blue;
+            padding: 10px;
         }
 
         #dicas{
-            color: brown;
+            color: rgb(42, 165, 118);
         }
 
-       
+        li{
+            /* pode colocar outros icones atraves dos sites salvando as imagens, tag list-style-image: local da imagem  */
+            list-style-type:disc;
+        }
+
+        a{
+            color: rgb(5, 139, 0);
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: blueviolet;
+            font-weight: bold;
+        }
+
+       small{
+             margin: 5px 20px;
+       }
+
+       hr{
+            height:5px;
+            background-color:rgb(163, 7, 7);
+       }
+
+       html{
+           background-color: cadetblue;
+       }
 
     </style>
 
@@ -42,10 +80,10 @@
 
 <body>
     <a href="https://github.com/" target="_blank">
-        <img src="img/Octocat.png" alt="Logo do Github" width="100px">   
+        <img src="img/Octocat.png" alt="Logo do Github" >   
     </a>
     
-    <h1 style="color:#ffffff;background-color: rgb(14, 6, 6);padding: 10px;text-align: center;">Conhecendo o GITHUB</h1>
+    <h1 style="color:#ffffff;background-color: rgb(14, 6, 6);padding: 10px; letter-spacing: 3px; text-align: center;">Conhecendo o GITHUB</h1>
 
     <h2>Realizando COMMITS</h2>
     <ul>
@@ -89,10 +127,11 @@
         </a>
     </ul>
     
-    <hr style="height:3px;border-width:0;color:rgb(161, 29, 29);background-color:rgb(163, 7, 7)">
+    <hr>
 
-    &copy; &reg; Desenvolvido por: <b><i>Renata</i></b>
-    <br>
+     <p>Desenvolvido por: <b><i>Renata</i></b>&copy; &reg;
+    </p>
+
     <a href="mailto:renata.aversa@hotmail.com">
         <small>renata.aversa@hotmail.com</small>
     </a>
@@ -100,6 +139,7 @@
     <a href="1933661100">
         <small>(19) 3366-1100</small>
     </a>
+
 </body>
 
 </html>
